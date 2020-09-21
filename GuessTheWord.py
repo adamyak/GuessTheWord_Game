@@ -8,7 +8,7 @@ print("All the Best ! ", Name)
 
 
 f =input("Enter the name of the file: ")
-if len(f)< 1:f="c"
+if len(f)< 1:f="random.txt"
 with open("random.txt") as wordfile:   # with statement can handle closing the file automatically,random.txt is the name of the files
   words = wordfile.read().split()    #.read().split read words that are on separate lines from the file (.split() split the string into a list of strings)
 random_word=random.choice(words)    #random.choice()  randomly select one word from the list
